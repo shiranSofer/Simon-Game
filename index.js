@@ -5,7 +5,7 @@ var userClickedPattern = [];
 var gameOn = false;
 var level = 0;
 
-$(document).keypress(startGame);
+$(document).on("keypress input", startGame);
 
 $(".button").click(clickHandler);
 
